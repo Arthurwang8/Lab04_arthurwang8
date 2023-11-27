@@ -10,7 +10,15 @@
 
 int indexOfMax(int *a, int size) {
   assert(size >= 1);
-  return -42; // STUB !!! Remove and replace with correct code
+  int temp = a[0];
+  int index = 0;
+  for(int i = 1; i < a.size(); i ++){
+  if(a[i]>temp){
+  temp = a[i];
+  index = i;
+  }
+  }
+return index;
 }
 
 // a: an array of ints.  size is how many ints in array
@@ -21,7 +29,15 @@ int indexOfMax(int *a, int size) {
 // You may assume size >= 1
 int indexOfMin(int *a, int size) {
   assert(size >= 1);
-  return -42; // STUB !!! Remove and replace with correct code
+  int temp = a[0];
+  int index = 0;
+  for(int i = 1; i < a.size(); i ++){
+  if(a[i]<temp){
+  temp = a[i];
+  index = i;
+  }
+  }
+return index;
 }
 
 // a: an array of ints.  size is how many ints in array
