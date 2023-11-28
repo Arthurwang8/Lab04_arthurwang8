@@ -113,7 +113,11 @@ void copyElements(int *dest, int *src, int n) {
 int copyOddOnly(int *dest, int *src, int n) {
   int count = 0;
   for(int i = 0; i < n; i ++){
-  if(src[i]%2!=0){
+  int temp = src[i];
+  if(temp<=0){
+  temp = 0-temp;
+  }
+  if(temp%2!=0){
   dest[i] = src[i];
   count++;
   }
@@ -149,5 +153,5 @@ int* createArray(int len) {
   for(int i = 0; i < len; i ++){
   arr[i] = 0;
   }
-  return arr;
+  return &arr;
 }
