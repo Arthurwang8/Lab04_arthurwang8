@@ -46,7 +46,15 @@ return index;
 // You may assume size >= 1
 int largestValue(int *a, int size) {
   assert(size >= 1);
-  return -42; // STUB !!! Remove and replace with correct code
+  int temp = a[0];
+  int index = 0;
+  for(int i = 1; i < size; i ++){
+  if(a[i]>temp){
+  temp = a[i];
+  index = i;
+  }
+  }
+return temp;
 }
 
 // a: an array of ints.  size is how many ints in array
@@ -56,7 +64,15 @@ int largestValue(int *a, int size) {
 
 int smallestValue(int *a, int size) {
   assert(size >= 1);
-  return -42; // STUB !!! Remove and replace with correct code
+  int temp = a[0];
+  int index = 0;
+  for(int i = 1; i < size; i ++){
+  if(a[i]<temp){
+  temp = a[i];
+  index = i;
+  }
+  }
+return temp;
 }
 
 
@@ -65,7 +81,16 @@ int smallestValue(int *a, int size) {
 // size may be 0 in this case, or non-zero.
 
 int sum(int *a, int size) {
-  return -42; // STUB
+  assert(size >= 1);
+  int temp = a[0];
+  int index = 0;
+  for(int i = 1; i < size; i ++){
+  if(a[i]<temp){
+  temp += a[i];
+  index = i;
+  }
+  }
+return temp;
 }
 
 
