@@ -82,7 +82,6 @@ int sum(int *a, int size) {
   for(int i = 1; i < size; i ++){
   if(a[i]<temp){
   temp += a[i];
-  index = i;
   }
   }
 return temp;
@@ -96,7 +95,6 @@ return temp;
 // copy n elements from src to dest.
 
 void copyElements(int *dest, int *src, int n) {
-  assert(size >= 1);
 
   for(int i = 1; i < n; i ++){
   
