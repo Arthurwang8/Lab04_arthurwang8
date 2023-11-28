@@ -120,7 +120,7 @@ int copyOddOnly(int *dest, int *src, int n) {
   if(temp<=0){
   temp = 0-temp;
   }
-  if(temp%2!=0){
+  if(temp%2!=0 && temp!=0){
   dest[i] = src[i];
   count++;
   }
