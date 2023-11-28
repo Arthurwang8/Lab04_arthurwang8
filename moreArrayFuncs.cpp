@@ -1,5 +1,8 @@
 #include <cassert>
 #include "moreArrayFuncs.h"
+#include <vector>
+#include <iostream>
+
 
 // a: an array of ints.  size is how many ints in array
 // Return the index of largest value.  
@@ -149,9 +152,6 @@ void multiplyPairwise(int *a, int *b, int *product, int n) {
 // you should return a pointer to the new integer array of size len
 // with all of the elements in it set to 0
 int* createArray(int len) {
-  int* arr;
-  for(int i = 0; i < len; i ++){
-  arr[i] = 0;
-  }
-  return &arr;
+  int* arr = new intlen;
+  return arr;
 }
