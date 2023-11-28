@@ -47,11 +47,9 @@ return index;
 int largestValue(int *a, int size) {
   assert(size >= 1);
   int temp = a[0];
-  int index = 0;
   for(int i = 1; i < size; i ++){
   if(a[i]>temp){
   temp = a[i];
-  index = i;
   }
   }
 return temp;
@@ -65,11 +63,9 @@ return temp;
 int smallestValue(int *a, int size) {
   assert(size >= 1);
   int temp = a[0];
-  int index = 0;
   for(int i = 1; i < size; i ++){
   if(a[i]<temp){
   temp = a[i];
-  index = i;
   }
   }
 return temp;
@@ -83,7 +79,6 @@ return temp;
 int sum(int *a, int size) {
   assert(size >= 1);
   int temp = a[0];
-  int index = 0;
   for(int i = 1; i < size; i ++){
   if(a[i]<temp){
   temp += a[i];
@@ -107,7 +102,6 @@ void copyElements(int *dest, int *src, int n) {
   
   dest[i] = src[i];
   }
-  return dest;
   
 }
 
