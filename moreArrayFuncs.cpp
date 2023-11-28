@@ -116,7 +116,7 @@ void copyElements(int *dest, int *src, int n) {
 int copyOddOnly(int *dest, int *src, int n) {
   int count = 0;
   int i = 0;
-  while(count<n){
+  while(i<n){
   int temp = src[i];
   if(temp<=0){
   temp = 0-temp;
