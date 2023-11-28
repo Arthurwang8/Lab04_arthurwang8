@@ -101,7 +101,14 @@ return temp;
 // copy n elements from src to dest.
 
 void copyElements(int *dest, int *src, int n) {
-  // STUB: Fix this
+  assert(size >= 1);
+
+  for(int i = 1; i < n; i ++){
+  
+  dest[i] = src[i];
+  }
+  return dest;
+  
 }
 
 // dest is an array of int that has capacity at LEAST of size n
